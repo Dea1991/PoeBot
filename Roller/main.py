@@ -1,5 +1,7 @@
 import pyautogui as pg
+# python -m pip install pyautogui
 import pyperclip as pc
+# python -m pip install pyperclip
 import time
 import keyboard
 x = 0
