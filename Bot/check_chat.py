@@ -1,15 +1,22 @@
 import os
 import datetime
 
-t = str(datetime.datetime.now())
-x = t[8:10] + 'x' + t[5:7] + ';' + t[11:13] + 'x' + t[14:16] + 'x' + t[17:19] + '.txt'
-x = 'C:/History/' + x
-print(x)
-path_old = 'C:\Program Files (x86)\Steam\steamapps\common\Path of Exile\logs\Client.txt'
 
-z = open(path_old)
-q = z.readlines(353)
-print(q)
+time_now = str(datetime.datetime.now())
+day = time_now[8:10]
+month = time_now[5:7]
+hour = time_now[11:13]
+minutes = time_now[14:16]
+sec = time_now[17:19]
+way_new = 'C:/HistoryPoe/'
+name_txt = way_new + day + '.' + month + '(' + hour + '.' + minutes + '.' + sec + ')' + '.txt'
+new_txt = open(name_txt, mode='w')
+
+log_old = 'C:\Program Files (x86)\Steam\steamapps\common\Path of Exile\logs\Client.txt'
+log = open(log_old)
+read = log.read()
+
+#print(q)
 # a = open(x, mode='w')
 
 
