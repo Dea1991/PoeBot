@@ -1,12 +1,1 @@
-
-
-
-
-def read_lines_from_big_file(path):
-    with open(path) as fp:
-        for line in fp:
-            parts = line.split()
-            yield parts  # -> ['1.', '27.01.1957', '8,12,31,39,43,45']
-
-for split_line in read_lines_from_big_file(path):
-    # do something with split_line
+['2022/10/03', '19:46:55', '450920500', 'cff943d8', '[INFO', 'Client', '16692]', '@От', 'кого', 'Magnus_but_carlsberg:', 'Здравствуйте,', 'хочу', 'купить', 'у', 'вас', 'Заражённая', 'сфера', 'Делириума', 'за', '1', 'alch', 'в', 'лиге', 'Kalandra', '(секция', '"~price', '1', 'alch";', 'позиция:', '1', 'столбец,', '3', 'ряд)']
