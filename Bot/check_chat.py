@@ -29,8 +29,8 @@ data = year + '/' + month + '/' + day
 for split_line in read_lines_from_big_file(log_old):
     count += 1
     print(split_line)
-    if split_line[0] == data:
-        print('+')
+#    if split_line[0] == data:
+
 
 
 

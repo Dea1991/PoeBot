@@ -10,7 +10,7 @@ import request_currency
 # 2 parsing_currency
 
 price = request_currency.check_price_div()
-
+print(price)
 # 3 monitoring_chat
 
 # 4 location_objects
