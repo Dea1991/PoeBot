@@ -58,5 +58,6 @@ for split_line in read_lines_from_big_file(log_old):
             else:
                 with open('trade_list.txt', "a", encoding='utf-8') as trade_add1:
                     trade_add1.write(str(split_line) + '\n')
+
                 # функция добавить в пати
                 print("найден новый трейд")

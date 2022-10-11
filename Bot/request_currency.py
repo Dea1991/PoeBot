@@ -8,4 +8,6 @@ def check_price_div():
     return price_div
 
 
+print(check_price_div())
+
 
