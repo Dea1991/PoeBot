@@ -2,24 +2,22 @@ import os
 import datetime
 
 
-def time():
+class GetTime:
     time_now = str(datetime.datetime.now())
-    year1 = time_now[0:4]
-    day1 = time_now[8:10]
-    month1 = time_now[5:7]
-    hour1 = time_now[11:13]
-    minutes1 = time_now[14:16]
-    sec1 = time_now[17:19]
-    return year1, day1, month1, hour1, minutes1, sec1
+    year = time_now[0:4]
+    day = time_now[8:10]
+    month = time_now[5:7]
+    hour = time_now[11:13]
+    minutes = time_now[14:16]
+    sec = time_now[17:19]
 
 
-time()
-year = time()[0]
-day = time()[1]
-month = time()[2]
-hour = time()[3]
-minutes = time()[4]
-sec = time()[5]
+year = GetTime.year
+day = GetTime.day
+month = GetTime.month
+hour = GetTime.hour
+minutes = GetTime.minutes
+sec = GetTime.sec
 way_new = 'C:/HistoryPoe/'
 name_txt = way_new + day + '.' + month + '(' + hour + '.' + minutes + '.' + sec + ')' + '.txt'
 # new_txt = open(name_txt, mode='w')

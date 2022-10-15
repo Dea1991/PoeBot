@@ -4,7 +4,7 @@ import pyperclip as pc
 # python -m pip install pyperclip
 import time
 import keyboard
-x = 0
+txt = 0
 
 
 def roll_alt():
