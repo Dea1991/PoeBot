@@ -37,7 +37,8 @@ class TradeParsingList:
         pass
 
     def return_nick(self):
-        global txt, nick
+        global txt
+        nick = ''
         count = 0
         word1 = 'Здравствуйте,'
         for i in txt:
@@ -131,7 +132,7 @@ class TradeParsingList:
         print('y: ', y)
         return y
 
-
+print(TradeParsingList.return_price())
 
 
 
